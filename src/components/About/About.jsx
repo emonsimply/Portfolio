@@ -1,12 +1,11 @@
 const About = () => {
   return (
     <section id="about" className="py-20 bg-white">
-      <div className="max-w-6xl mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center text-gray-900">
-          About Me
-        </h2>
+      <div className="max-w-6xl mx-auto px-4 text-center">
+        <p className="text-sm text-gray-500">Get To Know More</p>
+        <h1 className="text-4xl font-bold text-[#333333] mt-1">About Me</h1>
 
-        <p className="mt-6 text-gray-600 leading-relaxed text-center max-w-3xl mx-auto">
+        <p className="mt-6 text-gray-600 leading-relaxed  max-w-3xl mx-auto">
           I started my coding journey with curiosity and passion for creating
           beautiful, functional websites. I enjoy building responsive UI,
           solving problems, and learning new technologies. Outside programming,
