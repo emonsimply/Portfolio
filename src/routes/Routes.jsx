@@ -6,11 +6,11 @@ export const router = createBrowserRouter([
   {
     path: "/",
     Component: MainLayout,
-          children: [
+    children: [
       {
         index: true,
         Component: Home,
-      }
+      },
     ],
   },
 ]);
