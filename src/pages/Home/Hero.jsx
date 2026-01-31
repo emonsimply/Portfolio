@@ -7,7 +7,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="flex flex-col md:flex-row items-center justify-center min-h-screen p-6 gap-10"
+      className="flex flex-col md:flex-row items-center justify-center min-h-screen p-6 gap-10 mt-8 md:mt-0"
     >
       {/* Profile Image */}
       <div>
@@ -20,13 +20,11 @@ const Hero = () => {
 
       {/* Hero Content */}
       <div className="w-full max-w-md text-center flex flex-col items-center">
-        <p className="text-sm text-gray-500">Hello, I'm</p>
-
-        <h1 className="text-4xl font-bold text-[#333333] mt-1">
+        <p className="text-sm text-secondary font-one mb-1.5 ">Hello, I'm</p>
+        <h2 className="text-[46px] font-bold leading-[72px] text-primary font-two">
           Foysal Islam Emon
-        </h1>
-
-        <p className="text-2xl text-gray-600 mt-2 mb-8">Frontend Developer</p>
+        </h2>
+        <p className="text-2xl text-secondary mt-2 mb-8">Frontend Developer</p>
 
         {/* Buttons */}
         <div className="flex flex-col sm:flex-row justify-center md:justify-start space-y-4 sm:space-y-0 sm:space-x-4 mb-8">

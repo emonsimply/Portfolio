@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { IoCloseOutline } from "react-icons/io5";
+import { RiMenuFill } from "react-icons/ri";
 import { Link } from "react-scroll";
 
 const Navbar = () => {
@@ -15,7 +17,6 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 w-full bg-white/60 backdrop-blur-lg shadow z-50">
       <div className="max-w-7xl mx-auto px-4 py-4 flex justify-center">
-
         {/* Desktop Menu */}
         <ul className="hidden md:flex space-x-8 justify-center">
           {navItems.map((item) => (
@@ -26,7 +27,7 @@ const Navbar = () => {
                 smooth={true}
                 duration={500}
                 offset={-80}
-                className="cursor-pointer hover:text-indigo-600 transition"
+                className="cursor-pointer hover:text-cyan-400 transition"
               >
                 {item.text}
               </Link>
@@ -39,7 +40,7 @@ const Navbar = () => {
           className="md:hidden text-gray-800 absolute right-4 top-4"
           onClick={() => setOpen(!open)}
         >
-          {open ? <p>x</p> : <p>x</p>}
+          {open ? <IoCloseOutline /> : <RiMenuFill />}
         </button>
       </div>
 

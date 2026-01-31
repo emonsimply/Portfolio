@@ -1,12 +1,12 @@
 import { Home, Phone, Mail } from "lucide-react";
+import Title from "../../components/shared/Title";
 
 const Contact = () => {
   return (
     <section id="contact" className="py-20 bg-gray-50">
       <div className="max-w-5xl mx-auto px-4">
         <div className="text-center">
-          <p className="text-sm text-gray-500">Get in Touch</p>
-          <h1 className="text-4xl font-bold text-[#333333] mt-1">Contact Me</h1>
+          <Title subtitle="Get In Touch" title=" Contact me" />
         </div>
 
         <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">

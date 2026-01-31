@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { BadgeCheck } from "lucide-react";
+import Title from "../../components/shared/Title";
 
 const skills = [
   "HTML",
@@ -30,17 +31,17 @@ const skills = [
 
 export default function Skills() {
   return (
-    <section className="w-full py-16 text-white">
+    <section id="skills" className="w-full py-16 text-white">
       <div className="text-center">
-        <p className="text-sm text-gray-500">Explore My</p>
-        <h1 className="text-4xl font-bold text-[#333333] mt-1">Skills</h1>
+        
+        <Title subtitle="Explore My" title="Skills" />
       </div>
       <div className="max-w-5xl mx-auto px-6">
         <motion.h2
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="text-3xl md:text-4xl font-bold text-center mb-10"
+          className="text-3xl md:text-4xl font-bold text-center"
         >
           Skills
         </motion.h2>
