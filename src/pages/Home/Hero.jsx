@@ -7,34 +7,34 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="flex flex-col md:flex-row items-center justify-center min-h-screen p-6 gap-10 mt-8 md:mt-0"
+      className="flex flex-col md:flex-row items-center justify-center min-h-[calc(100vh-80px)] p-6 gap-10 mt-8 md:mt-0"
     >
       {/* Profile Image */}
-      <div>
+      <div className="md:mt-20">
         <img
           alt="profile"
-          className="w-64 h-64 md:w-80 md:h-80 mx-auto rounded-full object-cover mb-4 shadow-xl"
+          className="w-68 h-68 md:w-80 md:h-80 mx-auto rounded-full object-cover mb-4 shadow-lg"
           src={image}
         />
       </div>
 
       {/* Hero Content */}
-      <div className="w-full max-w-md text-center flex flex-col items-center">
-        <p className="text-sm text-secondary font-one mb-1.5 ">Hello, I'm</p>
-        <h2 className="text-[46px] font-bold leading-[72px] text-primary font-two">
+      <div className="md:mt-20 w-full max-w-md text-center flex flex-col items-center">
+        <p className="text-sm text-secondary font-one">Hello, I'm</p>
+        <h2 className="text-3xl md:text-[46px] my-0 md:my-2 font-bold leading-[72px] text-primary font-two">
           Foysal Islam Emon
         </h2>
-        <p className="text-2xl text-secondary mt-2 mb-8">Frontend Developer</p>
+        <p className="text-2xl text-secondary mb-8">Frontend Developer</p>
 
         {/* Buttons */}
         <div className="flex flex-col sm:flex-row justify-center md:justify-start space-y-4 sm:space-y-0 sm:space-x-4 mb-8">
-          <button className="px-6 py-3 text-sm font-medium rounded-full border-2 border-gray-800 text-gray-800 hover:bg-black hover:text-white cursor-pointer flex items-center gap-1 transition duration-300">
+          <button className="px-6 py-3 text-sm font-medium rounded-full border-2 border-primary text-primary hover:bg-black hover:text-white cursor-pointer flex items-center gap-1 transition duration-300">
             Download CV <IoMdDownload />
           </button>
 
           <a
             href="#contact"
-            className="px-12 py-3 text-sm font-medium rounded-full border-2 border-gray-800 text-gray-800 hover:bg-black hover:text-white cursor-pointer flex items-center gap-1 duration-300 transition"
+            className="px-12 py-3 text-sm font-medium rounded-full border-2 border-primary text-primary hover:bg-black hover:text-white cursor-pointer flex items-center gap-1 duration-300 transition"
           >
             Contact
           </a>

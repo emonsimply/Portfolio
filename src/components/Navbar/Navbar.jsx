@@ -27,7 +27,7 @@ const Navbar = () => {
                 smooth={true}
                 duration={500}
                 offset={-80}
-                className="cursor-pointer hover:text-cyan-400 transition"
+                className="cursor-pointer hover:text-secondary hover:underline transition"
               >
                 {item.text}
               </Link>

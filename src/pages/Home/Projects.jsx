@@ -3,10 +3,11 @@ import ProjectCard from "../../components/shared/ProjectCard";
 import toytopiaImage from "/src/assets/toytopia.JPG";
 import plateshareImage from "/src/assets/plateshare.JPG";
 import Title from "../../components/shared/Title";
+import Container from "../../components/shared/Container";
 
 const Projects = () => {
   return (
-    <section id="projects" className="max-w-7xl mx-auto px-4 py-20">
+    <Container id="projects" className=" py-20">
       <div className="text-center mb-6">
         <Title subtitle="Browse My Recent" title="Projects" />
       </div>
@@ -26,7 +27,7 @@ const Projects = () => {
         />
         
       </div>
-    </section>
+    </Container>
   );
 };
 
