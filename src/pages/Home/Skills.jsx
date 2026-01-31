@@ -2,9 +2,27 @@ import React from "react";
 import Title from "../../components/shared/Title";
 import Container from "../../components/shared/Container";
 import ContentContainer from "../../components/shared/ContentContainer";
-import { FaCss3Alt, FaHtml5, FaJs, FaReact } from "react-icons/fa";
+import {
+  FaCss3Alt,
+  FaFigma,
+  FaGitAlt,
+  FaGithub,
+  FaHtml5,
+  FaJs,
+  FaNodeJs,
+  FaReact,
+} from "react-icons/fa";
 import { RiVerifiedBadgeFill } from "react-icons/ri";
-import { SiNextdotjs, SiTailwindcss } from "react-icons/si";
+import {
+  SiAdobephotoshop,
+  SiExpress,
+  SiFirebase,
+  SiJsonwebtokens,
+  SiMongodb,
+  SiNextdotjs,
+  SiTailwindcss,
+} from "react-icons/si";
+import { VscVscode } from "react-icons/vsc";
 
 const Skills = () => {
   const frontend = [
@@ -14,40 +32,108 @@ const Skills = () => {
     { name: "HTML", icon: FaHtml5 },
     { name: "CSS", icon: FaCss3Alt },
     { name: "Tailwind CSS", icon: SiTailwindcss },
-    
-    
+  ];
+
+  const backend = [
+    { name: "Node JS", icon: FaNodeJs },
+    { name: "Express JS", icon: SiExpress },
+    { name: "MongoDB", icon: SiMongodb },
+    { name: "Firebase", icon: SiFirebase },
+    // { name: "JSON Web Tokens", icon: SiJsonwebtokens },
+  ];
+
+  const tools = [
+    { name: "Git", icon: FaGitAlt },
+    { name: "GitHub", icon: FaGithub },
+    // { name: "Vercel", icon: SiVercel },
+    // { name: "Surge", icon: SiVercel },
+    { name: "VS Code", icon: VscVscode },
+    { name: "Figma", icon: FaFigma },
+    { name: "Photoshop", icon: SiAdobephotoshop },
   ];
 
   return (
-    <Container id="skills" className="">
-      <div className="text-center">
-        <Title subtitle="Explore My" title="Skills" />
-      </div>
+    <section id="skills">
+      <Container className="">
+        <div className="text-center">
+          <Title subtitle="Explore My" title="Skills" />
+        </div>
 
-      <div className="flex items-center justify-center gap-8">
-        <ContentContainer className="p-10">
-          <h1 className="font-bold mb-5 font-two text-2xl">Frontend</h1>
+        <div className="flex justify-center gap-8">
+          <ContentContainer className="px-12 py-6">
+            <h1 className="font-bold text-center border-b-2 pb-2 border-orange-700 text-secondary mb-5 font-two text-2xl">Frontend</h1>
 
-          <div className="grid grid-cols-2 flex-col gap-6">
-            {frontend.map((skill, index) => {
-              const Icon = skill.icon;
-              return (
-                <div key={index} className="flex items-center gap-1">
-                  <Icon size={40} />
-                  <div>
-                    <h2 className="font-semibold font-two">{skill.name}</h2>
-                    <p className="text-sm font-one flex items-center gap-1 text-gray-500">
-                      <RiVerifiedBadgeFill />
-                      Intermediate
-                    </p>
+            <div className="grid  flex-col gap-6">
+              {frontend.map((skill, index) => {
+                const Icon = skill.icon;
+                return (
+                  <div key={index} className="flex items-center gap-1">
+                    <Icon size={40} />
+                    <div>
+                      <h2 className="font-semibold font-two">{skill.name}</h2>
+                      <p className="text-sm font-one flex items-center gap-1 text-gray-500">
+                        <RiVerifiedBadgeFill />
+                        Intermediate
+                      </p>
+                    </div>
                   </div>
-                </div>
-              );
-            })}
-          </div>
-        </ContentContainer>
-      </div>
-    </Container>
+                );
+              })}
+            </div>
+          </ContentContainer>
+
+          {/* Backend */}
+          <ContentContainer className="px-12 py-6">
+            <h1 className="font-bold text-center border-b-2 pb-2 border-orange-700 text-secondary mb-5 font-two text-2xl">
+              Backend
+            </h1>
+
+            <div className="grid  gap-6">
+              {backend.map((skill, index) => {
+                const Icon = skill.icon;
+                return (
+                  <div key={index} className="flex items-center gap-1">
+                    <Icon size={40} />
+                    <div>
+                      <h2 className="font-semibold font-two">{skill.name}</h2>
+                      <p className="text-sm font-one flex items-center gap-1 text-gray-500">
+                        <RiVerifiedBadgeFill />
+                        Intermediate
+                      </p>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          </ContentContainer>
+
+          {/* Tools */}
+          <ContentContainer className="px-12 py-6">
+            <h1 className="font-bold text-center border-b-2 pb-2 border-orange-700 text-secondary mb-6 font-two text-2xl">
+              Tools
+            </h1>
+
+            <div className="grid  flex-col gap-6">
+              {tools.map((skill, index) => {
+                const Icon = skill.icon;
+                return (
+                  <div key={index} className="flex items-center gap-1">
+                    <Icon size={40} />
+                    <div>
+                      <h2 className="font-semibold font-two">{skill.name}</h2>
+                      <p className="text-sm font-one flex items-center gap-1 text-gray-500">
+                        <RiVerifiedBadgeFill />
+                        Intermediate
+                      </p>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          </ContentContainer>
+        </div>
+      </Container>
+    </section>
   );
 };
 
