@@ -9,7 +9,7 @@ import ScrollDown from "../../components/shared/ScrollDown";
 const Projects = () => {
   return (
     <section id="projects">
-      <Container className=" py-20">
+      <Container className=" my-16">
         <div className="text-center mb-6">
           <Title subtitle="Browse My Recent" title="Projects" />
         </div>
@@ -19,12 +19,6 @@ const Projects = () => {
             title="ToyTopia | A Toy Marketplace"
             githubLink="https://github.com/emonsimply/toytopia"
             liveDemoLink="https://toytopia-emonsimply.netlify.app/"
-          />
-          <ProjectCard
-            image={plateshareImage}
-            title="PlateShare | A Food Recipe Sharing Platform"
-            githubLink="https://github.com/emonsimply/B12-A10-PlateShare-Client"
-            liveDemoLink="https://b12-a10-plateshare-emonsimply.netlify.app/"
           />
           <ProjectCard
             image={plateshareImage}
