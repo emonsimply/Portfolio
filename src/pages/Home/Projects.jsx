@@ -7,27 +7,33 @@ import Container from "../../components/shared/Container";
 
 const Projects = () => {
   return (
-    <Container id="projects" className=" py-20">
-      <div className="text-center mb-6">
-        <Title subtitle="Browse My Recent" title="Projects" />
-      </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        
-        <ProjectCard
-          image={toytopiaImage}
-          title="ToyTopia | A Toy Marketplace"
-          githubLink="https://github.com/emonsimply/toytopia"
-          liveDemoLink="https://toytopia-emonsimply.netlify.app/"
-        />
-        <ProjectCard
-          image={plateshareImage}
-          title="PlateShare | A Food Recipe Sharing Platform"
-          githubLink="https://github.com/emonsimply/B12-A10-PlateShare-Client"
-          liveDemoLink="https://b12-a10-plateshare-emonsimply.netlify.app/"
-        />
-        
-      </div>
-    </Container>
+    <section id="projects">
+      <Container className=" py-20">
+        <div className="text-center mb-6">
+          <Title subtitle="Browse My Recent" title="Projects" />
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <ProjectCard
+            image={toytopiaImage}
+            title="ToyTopia | A Toy Marketplace"
+            githubLink="https://github.com/emonsimply/toytopia"
+            liveDemoLink="https://toytopia-emonsimply.netlify.app/"
+          />
+          <ProjectCard
+            image={plateshareImage}
+            title="PlateShare | A Food Recipe Sharing Platform"
+            githubLink="https://github.com/emonsimply/B12-A10-PlateShare-Client"
+            liveDemoLink="https://b12-a10-plateshare-emonsimply.netlify.app/"
+          />
+          <ProjectCard
+            image={plateshareImage}
+            title="PlateShare | A Food Recipe Sharing Platform"
+            githubLink="https://github.com/emonsimply/B12-A10-PlateShare-Client"
+            liveDemoLink="https://b12-a10-plateshare-emonsimply.netlify.app/"
+          />
+        </div>
+      </Container>
+    </section>
   );
 };
 

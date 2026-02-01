@@ -59,9 +59,9 @@ const Skills = () => {
           <Title subtitle="Explore My" title="Skills" />
         </div>
 
-        <div className="flex justify-center gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 justify-center gap-8 ">
           <ContentContainer className="px-12 py-6">
-            <h1 className="font-bold text-center border-b-2 pb-2 border-orange-700 text-secondary mb-5 font-two text-2xl">Frontend</h1>
+            <h1 className="font-bold text-center border-b-2 pb-2 border-accent text-secondary mb-5 font-two text-2xl">Frontend</h1>
 
             <div className="grid  flex-col gap-6">
               {frontend.map((skill, index) => {

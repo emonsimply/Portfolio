@@ -27,7 +27,7 @@ const Navbar = () => {
                 smooth={true}
                 duration={500}
                 offset={-80}
-                className="cursor-pointer hover:text-secondary hover:underline transition"
+                className="cursor-pointer pb-2 hover:text-accent hover:underline transition"
               >
                 {item.text}
               </Link>
