@@ -2,6 +2,7 @@ import React from "react";
 import Title from "../../components/shared/Title";
 import Container from "../../components/shared/Container";
 import ContentContainer from "../../components/shared/ContentContainer";
+
 import {
   FaCss3Alt,
   FaFigma,
@@ -23,6 +24,7 @@ import {
   SiTailwindcss,
 } from "react-icons/si";
 import { VscVscode } from "react-icons/vsc";
+import ScrollDown from "../../components/shared/ScrollDown";
 
 const Skills = () => {
   const frontend = [
@@ -59,9 +61,11 @@ const Skills = () => {
           <Title subtitle="Explore My" title="Skills" />
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 justify-center gap-8 ">
+        <div className="flex flex-wrap justify-center gap-6 ">
           <ContentContainer className="px-12 py-6">
-            <h1 className="font-bold text-center border-b-2 pb-2 border-accent text-secondary mb-5 font-two text-2xl">Frontend</h1>
+            <h1 className="font-bold text-center border-b-2 pb-2 border-accent text-secondary mb-5 font-two text-2xl">
+              Frontend
+            </h1>
 
             <div className="grid  flex-col gap-6">
               {frontend.map((skill, index) => {
@@ -133,6 +137,8 @@ const Skills = () => {
           </ContentContainer>
         </div>
       </Container>
+
+      <ScrollDown target="projects" />
     </section>
   );
 };

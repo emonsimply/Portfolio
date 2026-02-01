@@ -1,3 +1,4 @@
+import ScrollDown from "../../components/shared/ScrollDown";
 import Title from "../../components/shared/Title";
 
 const About = () => {
@@ -13,6 +14,8 @@ const About = () => {
           I enjoy traveling, football, and graphic design.
         </p>
       </div>
+
+      <ScrollDown target="skills" />
     </section>
   );
 };
