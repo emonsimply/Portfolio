@@ -17,4 +17,17 @@
   font-family: Montserrat;
   font-weight: 600;
 }
+.font-three {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.pill-active {
+  color: white;
+  background-color: #333333;
+
+}
+
 

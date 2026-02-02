@@ -14,8 +14,8 @@ const NavItems = ({ isMobile = false, onItemClick }) => {
     <ul
       className={
         isMobile
-          ? "flex flex-col space-y-4 text-center"
-          : "hidden md:flex space-x-8 justify-center"
+          ? "flex flex-col space-y-3 text-center"
+          : "hidden md:flex space-x-3 justify-center"
       }
     >
       {items.map((item) => (
@@ -27,12 +27,9 @@ const NavItems = ({ isMobile = false, onItemClick }) => {
             duration={500}
             offset={-80}
             onClick={onItemClick}
-            className={`cursor-pointer pb-2 transition font-one text-lg
-              ${
-                isMobile
-                  ? "block text-gray-700 hover:text-indigo-600"
-                  : "hover:text-accent hover:underline"
-              }`}
+            activeClass="pill-active"
+            className="px-3 py-1 leading-none rounded-full text-primary transition-all duration-300 cursor-pointer
+                       hover:bg-[#eaeaea] hover:text-black font-three"
           >
             {item.text}
           </ScrollLink>
