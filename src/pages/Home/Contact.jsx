@@ -7,7 +7,7 @@ import { MdHome, MdLocalPhone } from "react-icons/md";
 const Contact = () => {
   return (
     <section id="contact">
-      <Container className="my-24">
+      <Container>
         <div className="text-center">
           <Title subtitle="Get In Touch" title=" Contact me" />
         </div>

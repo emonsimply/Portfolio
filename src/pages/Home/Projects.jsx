@@ -9,7 +9,7 @@ import ScrollDown from "../../components/shared/ScrollDown";
 const Projects = () => {
   return (
     <section id="projects">
-      <Container className=" my-16">
+      <Container>
         <div className="text-center mb-6">
           <Title subtitle="Browse My Recent" title="Projects" />
         </div>

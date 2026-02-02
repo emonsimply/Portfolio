@@ -56,14 +56,14 @@ const Skills = () => {
 
   return (
     <section id="skills">
-      <Container className="">
+      <Container>
         <div className="text-center">
           <Title subtitle="Explore My" title="Skills" />
         </div>
 
         <div className="flex flex-col md:flex-row justify-between gap-6">
           <ContentContainer className="px-12 py-6">
-            <h1 className="font-bold text-center border-b-2 pb-2 border-accent text-secondary mb-5 font-two text-2xl">
+            <h1 className="font-bold text-center text-secondary mb-5 font-two text-2xl">
               Frontend
             </h1>
 
@@ -88,7 +88,7 @@ const Skills = () => {
 
           {/* Backend */}
           <ContentContainer className="px-12 py-6">
-            <h1 className="font-bold text-center border-b-2 pb-2 border-orange-700 text-secondary mb-5 font-two text-2xl">
+            <h1 className="font-bold text-center text-secondary mb-5 font-two text-2xl">
               Backend
             </h1>
 
@@ -113,7 +113,7 @@ const Skills = () => {
 
           {/* Tools */}
           <ContentContainer className="px-12 py-6">
-            <h1 className="font-bold text-center border-b-2 pb-2 border-orange-700 text-secondary mb-6 font-two text-2xl">
+            <h1 className="font-bold text-center  text-secondary mb-6 font-two text-2xl">
               Tools
             </h1>
 

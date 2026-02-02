@@ -6,13 +6,13 @@ import aboutImage from "../../assets/01.jpg";
 const About = () => {
   return (
     <section id="about">
-      <Container className="mb-16 py-20">
+      <Container>
         <Title subtitle="Get To Know More" title="About Me" />
 
         <div className="flex">
-          <div>
+          {/* <div>
             <img src={aboutImage} alt="About Me" className="w-96 h-auto rounded-4xl shadow-lg" />
-          </div>
+          </div> */}
           <div className="max-w-6xl mx-auto px-4">
             <p className="mt-6 text-gray-600 leading-relaxed  max-w-3xl mx-auto">
               I started my coding journey with curiosity and passion for

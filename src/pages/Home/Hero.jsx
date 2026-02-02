@@ -9,7 +9,7 @@ const Hero = () => {
     <div>
       <section
         id="home"
-        className="flex flex-col md:flex-row items-center justify-center min-h-[calc(100vh-80px)] p-6 gap-10 mt-8 md:mt-0"
+        className="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-center min-h-[calc(100vh-80px)] p-6 gap-10 mt-8 md:mt-0"
       >
         {/* Profile Image */}
         <div className="md:mt-20">
