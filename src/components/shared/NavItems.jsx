@@ -29,7 +29,7 @@ const NavItems = ({ isMobile = false, onItemClick }) => {
             onClick={onItemClick}
             activeClass="pill-active"
             className="px-3 py-1 leading-none rounded-full text-primary transition-all duration-300 cursor-pointer
-                       hover:bg-[#eaeaea] hover:text-black font-three"
+                       hover:bg-stone-300 hover:text-black font-three"
           >
             {item.text}
           </ScrollLink>

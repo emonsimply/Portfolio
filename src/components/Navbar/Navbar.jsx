@@ -22,8 +22,8 @@ const Navbar = () => {
       className={`fixed top-2 left-1/2 -translate-x-1/2 z-50 transition-all duration-300
       ${
         scrolled
-          ? "bg-white/30 shadow-lg px-3 py-2 rounded-full backdrop-blur-xl"
-          : "bg-white/30 backdrop-blur-lg px-2 py-6 rounded-full"
+          ? "bg-black/10 px-3 py-2 rounded-full backdrop-blur-xl"
+          : "bg-white/30 backdrop-blur-lg px-6 py-6 rounded-full"
       }`}
     >
       <div className="flex items-center justify-center relative">
