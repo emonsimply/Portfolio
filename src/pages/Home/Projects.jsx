@@ -29,7 +29,6 @@ const Projects = () => {
         </div>
       </Container>
 
-      
       <ScrollDown target="contact" />
     </section>
   );

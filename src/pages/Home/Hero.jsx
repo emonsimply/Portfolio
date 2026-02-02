@@ -23,7 +23,7 @@ const Hero = () => {
         {/* Hero Content */}
         <div className="md:mt-20 w-full max-w-md text-center flex flex-col items-center">
           <p className="text-sm text-secondary font-one">Hello, I'm</p>
-          <h2 className="text-3xl md:text-[46px] my-0 md:my-2 font-bold leading-[72px] text-primary font-two">
+          <h2 className="text-3xl md:text-[42px] my-0 md:my-2 font-bold leading-[72px] text-primary font-two">
             Foysal Islam Emon
           </h2>
           <p className="text-2xl text-secondary mb-8">Frontend Developer</p>

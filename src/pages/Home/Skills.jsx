@@ -61,13 +61,13 @@ const Skills = () => {
           <Title subtitle="Explore My" title="Skills" />
         </div>
 
-        <div className="flex flex-wrap justify-center gap-6 ">
+        <div className="flex flex-col md:flex-row justify-between gap-6">
           <ContentContainer className="px-12 py-6">
             <h1 className="font-bold text-center border-b-2 pb-2 border-accent text-secondary mb-5 font-two text-2xl">
               Frontend
             </h1>
 
-            <div className="grid  flex-col gap-6">
+            <div className="grid  grid-cols-2 gap-6">
               {frontend.map((skill, index) => {
                 const Icon = skill.icon;
                 return (

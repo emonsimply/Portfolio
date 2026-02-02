@@ -1,68 +1,49 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { IoCloseOutline } from "react-icons/io5";
 import { RiMenuFill } from "react-icons/ri";
-import { Link } from "react-scroll";
+import NavItems from "../shared/NavItems";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
-  const navItems = [
-    { id: 1, text: "Home", link: "home" },
-    { id: 2, text: "About", link: "about" },
-    { id: 3, text: "Skills", link: "skills" },
-    { id: 4, text: "Projects", link: "projects" },
-    { id: 5, text: "Contact", link: "contact" },
-  ];
+  // Detect scroll
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 50);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
-    <nav className="fixed top-0 left-0 w-full bg-white/60 backdrop-blur-lg shadow z-50">
-      <div className="max-w-7xl mx-auto px-4 py-4 flex justify-center">
+    <nav
+      className={`fixed top-4 left-1/2 -translate-x-1/2 z-50 transition-all duration-300
+      ${
+        scrolled
+          ? "bg-white/80 shadow-lg px-6 py-2 rounded-full"
+          : "bg-white/30 backdrop-blur-lg px-8 py-4 rounded-full"
+      }`}
+    >
+      <div className="flex items-center justify-center relative">
         {/* Desktop Menu */}
-        <ul className="hidden md:flex space-x-8 justify-center">
-          {navItems.map((item) => (
-            <li key={item.id}>
-              <Link
-                to={item.link}
-                spy={true}
-                smooth={true}
-                duration={500}
-                offset={-80}
-                className="cursor-pointer pb-2 hover:text-accent hover:underline transition"
-              >
-                {item.text}
-              </Link>
-            </li>
-          ))}
-        </ul>
+        <NavItems />
 
         {/* Mobile Menu Icon */}
         <button
-          className="md:hidden text-gray-800 absolute right-4 top-4"
+          className="md:hidden absolute right-0 text-2xl text-gray-800"
           onClick={() => setOpen(!open)}
         >
           {open ? <IoCloseOutline /> : <RiMenuFill />}
         </button>
       </div>
 
-      {/* Mobile Nav Menu */}
+      {/* Mobile Menu */}
       {open && (
-        <ul className="md:hidden bg-white shadow-lg py-4 space-y-4 px-6 text-center">
-          {navItems.map((item) => (
-            <li key={item.id}>
-              <Link
-                to={item.link}
-                spy={true}
-                smooth={true}
-                duration={500}
-                offset={-80}
-                onClick={() => setOpen(false)}
-                className="block text-lg text-gray-700 hover:text-indigo-600 transition"
-              >
-                {item.text}
-              </Link>
-            </li>
-          ))}
-        </ul>
+        <div className="md:hidden mt-4 bg-white shadow-lg py-6 rounded-2xl">
+          <NavItems isMobile onItemClick={() => setOpen(false)} />
+        </div>
       )}
     </nav>
   );
