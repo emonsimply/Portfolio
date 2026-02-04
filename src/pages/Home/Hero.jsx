@@ -1,8 +1,9 @@
 import React from "react";
 import image from "../../assets/01.jpg";
-import { FaGithub } from "react-icons/fa";
+import { FaFacebook, FaGithub } from "react-icons/fa";
 import { IoMdDownload } from "react-icons/io";
 import ScrollDown from "../../components/shared/ScrollDown";
+import { RiLinkedinFill } from "react-icons/ri";
 
 const Hero = () => {
   return (
@@ -35,7 +36,6 @@ const Hero = () => {
               download
               className="inline-block"
             >
-              
               <button className="px-6 py-3 text-sm font-medium rounded-full border-2 border-primary text-primary hover:bg-black hover:text-white cursor-pointer flex items-center gap-1 transition duration-300">
                 Download CV <IoMdDownload />
               </button>
@@ -59,9 +59,12 @@ const Hero = () => {
               href="https://www.linkedin.com/in/emonsimply/"
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-full bg-gray-800 text-white px-2 font-bold flex items-center justify-center"
+              className="rounded-full bg-primary text-white px-2 flex items-center justify-center tooltip tooltip-left tooltip-secondary font-one"
+              data-tip="LinkedIn"
             >
-              in
+              <RiLinkedinFill />
+
+
             </a>
 
             <a
@@ -69,10 +72,23 @@ const Hero = () => {
               href="https://github.com/emonsimply"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-800 hover:text-black transition text-3xl "
+              className="text-primary text-3xl tooltip tooltip-secondary font-one"
+              data-tip="GitHub"
             >
               <FaGithub />
             </a>
+
+            <a
+              aria-label="Facebook Profile"
+              href="https://www.facebook.com/profile.php?id=61586495683512"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-primary text-3xl tooltip tooltip-right tooltip-secondary font-one"
+              data-tip="Facebook"
+            >
+              <FaFacebook />
+            </a>
+           
           </div>
         </div>
       </section>
