@@ -1,7 +1,7 @@
 import Title from "../../components/shared/Title";
 import Container from "../../components/shared/Container";
 import ContentContainer from "../../components/shared/ContentContainer";
-import { FaEnvelope, FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { FaEnvelope, FaFacebookF, FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { MdHome, MdLocalPhone } from "react-icons/md";
 
 const Contact = () => {
@@ -12,7 +12,7 @@ const Contact = () => {
           <Title subtitle="Get In Touch" title=" Contact me" />
         </div>
 
-        <ContentContainer className="w-fit mx-auto grid grid-cols-3 flex-wrap items-center justify-center gap-6 p-6 font-one">
+        <ContentContainer className="w-fit mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 flex-wrap items-center justify-center gap-6 p-6 font-one">
           {/* Email */}
           <a
             href=""
@@ -66,10 +66,23 @@ const Contact = () => {
             rel="noopener noreferrer"
             className="flex items-center gap-3 font-medium hover:opacity-80 transition"
           >
-            <span className="w-10 h-10 rounded-full bg-black text-white flex items-center justify-center">
-              <FaGithub />
+            <span className="w-10 h-10 rounded-full bg-white text-black flex items-center justify-center">
+              <FaGithub  className="w-10 h-10 text-black "/>
             </span>
             <span>GitHub</span>
+          </a>
+          {/* Facebook */}
+          <a
+            href="https://www.facebook.com/profile.php?id=61586495683512"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-3 font-medium hover:opacity-80 transition"
+          >
+            <span className="w-10 h-10 rounded-full bg-black text-white flex items-center justify-center">
+              <FaFacebookF />
+
+            </span>
+            <span>Facebook</span>
           </a>
         </ContentContainer>
       </Container>

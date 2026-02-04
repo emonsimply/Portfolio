@@ -1,6 +1,6 @@
 import React from "react";
 import image from "../../assets/01.jpg";
-import { FaLinkedin, FaGithub } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 import { IoMdDownload } from "react-icons/io";
 import ScrollDown from "../../components/shared/ScrollDown";
 
@@ -30,9 +30,18 @@ const Hero = () => {
 
           {/* Buttons */}
           <div className="flex flex-col sm:flex-row justify-center md:justify-start space-y-4 sm:space-y-0 sm:space-x-4 mb-8">
-            <button className="px-6 py-3 text-sm font-medium rounded-full border-2 border-primary text-primary hover:bg-black hover:text-white cursor-pointer flex items-center gap-1 transition duration-300">
-              Download CV <IoMdDownload />
-            </button>
+            <a
+              href="../../../public/Foysal-Islam-Emon_Frontend-Developer_Resume.pdf"
+              download
+              className="inline-block"
+            >
+              
+              <button className="px-6 py-3 text-sm font-medium rounded-full border-2 border-primary text-primary hover:bg-black hover:text-white cursor-pointer flex items-center gap-1 transition duration-300">
+                Download CV <IoMdDownload />
+              </button>
+            </a>
+
+            {/* <DownloadButton /> */}
 
             <a
               href="#contact"
@@ -66,7 +75,6 @@ const Hero = () => {
             </a>
           </div>
         </div>
-        
       </section>
       <ScrollDown target="about" />
     </div>

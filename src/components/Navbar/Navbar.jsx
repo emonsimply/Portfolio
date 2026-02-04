@@ -19,10 +19,10 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed top-2 left-1/2 -translate-x-1/2 z-50 transition-all duration-300
+      className={`md:fixed md:top-2 md:left-1/2 md:-translate-x-1/2 z-50 transition-all duration-300
       ${
         scrolled
-          ? "bg-black/10 px-3 py-2 rounded-full backdrop-blur-xl"
+          ? "bg-black/5 px-3 py-2 rounded-full backdrop-blur-xl"
           : "bg-white/30 backdrop-blur-lg px-6 py-6 rounded-full"
       }`}
     >

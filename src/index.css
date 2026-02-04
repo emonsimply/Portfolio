@@ -31,3 +31,15 @@
 }
 
 
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-rotate {
+  animation: rotate 6s linear infinite;
+}
+
+
+
