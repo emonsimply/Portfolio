@@ -13,10 +13,10 @@ const WhatsAppButton = () => {
       href={whatsappLink}
       target="_blank"
       rel="noopener noreferrer"
-      className="fixed bottom-6 right-6 z-50 bg-primary hover:bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg transition-all duration-300"
+      className="fixed bottom-3 md:bottom-6 right-3 md:right-6 z-50 bg-primary hover:bg-green-500 text-white md:w-14 w-10 h-10 md:h-14  rounded-full flex items-center justify-center shadow-lg transition-all duration-300"
       aria-label="Chat on WhatsApp"
     >
-      <FaWhatsapp className="text-3xl" />
+      <FaWhatsapp className="md:text-3xl text-xl" />
 
 
       {/* Curved text */}
@@ -24,7 +24,7 @@ const WhatsAppButton = () => {
         width="140"
         height="140"
         viewBox="0 0 140 140"
-        className="absolute -top-10 -left-9 "
+        className="absolute -top-10 -left-9 hidden md:block"
       >
         <defs>
           <path
