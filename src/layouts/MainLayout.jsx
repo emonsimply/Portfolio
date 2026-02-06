@@ -3,13 +3,13 @@ import Navbar from "../components/Navbar/Navbar";
 import { Outlet } from "react-router";
 import Footer from "../components/Footer/Footer";
 import WhatsAppButton from "../components/shared/WhatsAppButton";
+import ScrollSteps from "../components/shared/ScrollSteps";
 
 const MainLayout = () => {
   return (
     <div>
-      <div className="max-w-7xl mx-auto">
-    
-      </div><WhatsAppButton />
+      {/* <ScrollSteps /> */}
+      <WhatsAppButton />
       <nav className="">
         <Navbar></Navbar>
       </nav>
