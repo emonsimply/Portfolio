@@ -16,12 +16,14 @@ import {
 import { RiVerifiedBadgeFill } from "react-icons/ri";
 import {
   SiAdobephotoshop,
+  SiDaisyui,
   SiExpress,
   SiFirebase,
   SiJsonwebtokens,
   SiMongodb,
   SiNextdotjs,
   SiTailwindcss,
+  SiShadcnui,
 } from "react-icons/si";
 import { VscVscode } from "react-icons/vsc";
 import ScrollDown from "../../components/shared/ScrollDown";
@@ -34,6 +36,8 @@ const Skills = () => {
     { name: "HTML", icon: FaHtml5 },
     { name: "CSS", icon: FaCss3Alt },
     { name: "Tailwind CSS", icon: SiTailwindcss },
+    { name: "DaisyUi", icon: SiDaisyui },
+    { name: "Shadcn", icon: SiShadcnui },
   ];
 
   const backend = [
@@ -59,6 +63,8 @@ const Skills = () => {
       <Container>
         <div className="text-center">
           <Title subtitle="Explore My" title="Skills" />
+          
+
         </div>
 
         <div className="flex flex-col md:flex-row justify-between gap-6">
